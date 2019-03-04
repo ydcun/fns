@@ -1,0 +1,7 @@
+peer channel create -o orderer.example.com:7050 -c mychannel -t 50 -f ./channel-artifacts/mychannel.tx
+peer channel join -b mychannel.block
+peer chaincode install -n mychannel -p github.com/hyperledger/fabric/aberic/chaincode/go/chaincode_example02 -v 1.0
+peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n mychannel -c '{"Args":["init","A","10","B","10"]}' -P "OR ('Org1MSP.member')" -v 1.0
+peer chaincode invoke -C mychannel -n mychannel -c '{"Args":["invoke","A","B","5"]}'
+peer chaincode query -C mychannel -n mychannel -c '{"Args":["query","A"]}'
+

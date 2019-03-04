@@ -86,7 +86,7 @@ public class ChaincodeController {
         ModelAndView modelAndView = new ModelAndView("chaincodeResult");
         Api.Intent intent = Api.Intent.get(api.getIndex());
         String result = "";
-        String url = String.format("http://localhost:port/%s", Objects.requireNonNull(intent).getApiUrl());
+        String url = String.format("http://192.168.31.113:8080/%s", Objects.requireNonNull(intent).getApiUrl());
         modelAndView.addObject("url", url);
         switch (intent) {
             case INVOKE:

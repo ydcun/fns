@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <div th:fragment="header">
-    <div class="header py-4">
+    <div class="header py-4" style="background-color:#333333">
         <div class="container">
             <div class="d-flex">
                 <a class="header-brand" href="/index">
                     <img src="/static/images/logo.png" class="header-brand-img" alt="F.N.S logo">
                 </a>
+                <span style="color:#ffffff;font-size: 24px;">EXPEEDCLOUD极动云</span>
                 <div class="d-flex order-lg-2 ml-auto">
                     <div class="nav-item d-none d-md-flex">
-                        <a href="https://github.com/aberic/fabric-net-server" class="btn btn-sm btn-outline-primary"
-                           target="_blank" th:text="#{source_code}"></a>
+                        <!--<a href="https://github.com/aberic/fabric-net-server" class="btn btn-sm btn-outline-primary"-->
+                           <!--target="_blank" th:text="#{source_code}"></a>-->
                     </div>
                     <div class="dropdown">
                         <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                             <span class="ml-2 d-none d-lg-block">
-                                        <span class="text-default">Fabric Net</span>
-                                        <small class="text-muted d-block mt-1">Server</small>
+                                        <!--<span class="text-default">Fabric Net</span>-->
+                                        <small class="text-muted d-block mt-2" style="font-size: 18px; color:#ffffff !important">Server</small>
                                     </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                            <a class="dropdown-item" target="_blank" href="http://www.cnblogs.com/aberic">
-                                <ion-icon name="aperture"></ion-icon>
-                                <span th:text="#{blog}"></span>
-                            </a>
-                            <a class="dropdown-item" target="_blank"
-                               href="https://github.com/aberic/fabric-net-server/blob/master/LICENSE">
-                                <ion-icon name="color-wand"></ion-icon>
-                                <span th:text="#{license}"></span>
-                            </a>
-                            <a class="dropdown-item" target="_blank"
-                               href="https://github.com/aberic/fabric-net-server/issues">
-                                <ion-icon name="information-circle-outline"></ion-icon>
-                                <span th:text="#{issues}"></span>
-                            </a>
-                            <a class="dropdown-item" target="_blank" href="https://item.jd.com/12381034.html?dist=jd">
-                                <ion-icon name="book"></ion-icon>
-                                <span th:text="#{book}"></span>
-                            </a>
-                            <div class="dropdown-divider"></div>
+                            <!--<a class="dropdown-item" target="_blank" href="http://www.cnblogs.com/aberic">-->
+                                <!--<ion-icon name="aperture"></ion-icon>-->
+                                <!--<span th:text="#{blog}"></span>-->
+                            <!--</a>-->
+                            <!--<a class="dropdown-item" target="_blank"-->
+                               <!--href="https://github.com/aberic/fabric-net-server/blob/master/LICENSE">-->
+                                <!--<ion-icon name="color-wand"></ion-icon>-->
+                                <!--<span th:text="#{license}"></span>-->
+                            <!--</a>-->
+                            <!--<a class="dropdown-item" target="_blank"-->
+                               <!--href="https://github.com/aberic/fabric-net-server/issues">-->
+                                <!--<ion-icon name="information-circle-outline"></ion-icon>-->
+                                <!--<span th:text="#{issues}"></span>-->
+                            <!--</a>-->
+                            <!--<a class="dropdown-item" target="_blank" href="https://item.jd.com/12381034.html?dist=jd">-->
+                                <!--<ion-icon name="book"></ion-icon>-->
+                                <!--<span th:text="#{book}"></span>-->
+                            <!--</a>-->
+                            <!--<div class="dropdown-divider"></div>-->
                             <a class="dropdown-item" href="/logout">
                                 <ion-icon name="log-out"></ion-icon>
                                 <span th:text="#{sign_out}"></span>
@@ -85,13 +86,13 @@
                                 <span th:text="#{member}"></span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/aberic/fabric-net-server/wiki"
-                               target="_blank" class="nav-link">
-                                <ion-icon name="clipboard"></ion-icon>
-                                <span th:text="#{documentation}"></span>
-                            </a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                            <!--<a href="https://github.com/aberic/fabric-net-server/wiki"-->
+                               <!--target="_blank" class="nav-link">-->
+                                <!--<ion-icon name="clipboard"></ion-icon>-->
+                                <!--<span th:text="#{documentation}"></span>-->
+                            <!--</a>-->
+                        <!--</li>-->
                     </ul>
                 </div>
             </div>

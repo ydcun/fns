@@ -35,7 +35,7 @@
     <!-- Input Mask Plugin -->
     <script src="/static/plugins/input-mask/plugin.js"></script>
 </head>
-<body class="">
+<body class="" style="background-color: #333333">
 <div class="page">
     <div class="page-single">
         <div class="container">
@@ -43,6 +43,7 @@
                 <div class="col col-login mx-auto">
                     <div class="text-center mb-6">
                         <img src="/static/images/logo.png" class="h-6" alt="">
+                        <span style="color:#ffffff;font-size: 24px; line-height: 24px; vertical-align: center; margin-left: 10px;">EXPEEDCLOUD极动云</span>
                     </div>
                     <form class="card" th:action="@{login}" th:method="post" th:object="${user}">
                         <div class="card-body p-6">
