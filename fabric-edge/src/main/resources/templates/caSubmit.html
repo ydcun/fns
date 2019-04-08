@@ -77,6 +77,15 @@
                                                         th:text="${peer.leagueName}+'-'+${peer.orgName}+'-'+${peer.name}"></option>
                                             </select>
                                         </div>
+                                        <!--<div class="form-group">-->
+                                            <!--<label class="form-label" th:text="用户名"></label>-->
+                                            <!--<input type="text" class="form-control is-valid"-->
+                                                   <!--name="example-text-input-valid"-->
+                                                   <!--th:placeholder="#{ca_name_placeholder}"-->
+                                                   <!--id="userName"-->
+                                                   <!--onblur="check('userName')"-->
+                                                   <!--th:field="*{userName}">-->
+                                        <!--</div>-->
                                         <div class="form-group">
                                             <label class="form-label" th:text="#{ca_name}"></label>
                                             <input type="text" class="form-control is-valid"
@@ -152,6 +161,8 @@
                 msg="请上传文件"
             }else if(idStr=="certificate-file"){
                 msg="请上传文件"
+            }else if(idStr=="userName"){
+                msg="用户名不能为空"
             }
 
             that.addClass("is-invalid")

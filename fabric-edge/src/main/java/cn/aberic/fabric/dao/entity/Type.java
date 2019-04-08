@@ -18,40 +18,25 @@ package cn.aberic.fabric.dao.entity;
 
 import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.command.BaseModel;
 import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-/**
- * 作者：Aberic on 2018/7/12 21:02
- * 邮箱：abericyang@gmail.com
- */
 @Setter
 @Getter
 @ToString
-@Table(name = "fns_ca")
-public class CA {
+@Table(name = "t_type")
+public class Type extends BaseModel {
 
     @Column(name = "id",type = MySqlTypeConstant.INT,length = 9,isKey = true,isAutoIncrement = true)
     private int id;
-    @Column(name = "userName",type = MySqlTypeConstant.VARCHAR,length = 128)
-    private String userName;
-    @Column(name = "name",type = MySqlTypeConstant.VARCHAR,length = 32)
+    @Column(name = "name",type = MySqlTypeConstant.VARCHAR,length = 255)
     private String name;
-    @Column(name = "sk",type = MySqlTypeConstant.TEXT)
-    private String sk;
-    @Column(name = "certificate",type = MySqlTypeConstant.TEXT)
-    private String certificate;
-    @Column(name = "flag",type = MySqlTypeConstant.VARCHAR,length = 128)
-    private String flag; // optional
-    @Column(name = "peer_id",type = MySqlTypeConstant.INT,length = 9)
-    private int peerId;
-    @Column(name = "date",type = MySqlTypeConstant.VARCHAR,length = 14)
-    private String date; // optional
-
-    private String peerName; // optional
-    private String orgName; // optional
-    private String leagueName; // optional
+    @Column(name = "code",type = MySqlTypeConstant.VARCHAR,length = 255)
+    private String code;
+    @Column(name = "create_date",type = MySqlTypeConstant.VARCHAR,length = 255)
+    private String createDate;
 
 }
