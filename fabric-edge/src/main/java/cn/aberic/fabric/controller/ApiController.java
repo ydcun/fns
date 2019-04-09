@@ -173,7 +173,7 @@ public class ApiController {
      */
     @GetMapping(value = "goodsList.ajax")
     @ResponseBody
-    public Map<String, Object> goodsList(@RequestParam("id") Integer id) {
+    public Map<String, Object> goodsList(@RequestParam("id") String id) {
 
         Map<String, Object> map = new HashMap<>();
         List<IctGoods> list = new ArrayList<>();
@@ -209,7 +209,7 @@ public class ApiController {
      */
     @GetMapping(value = "getInfoAll.ajax")
     @ResponseBody
-    public Map<String,Object> getInfoAll(@RequestParam("id") Integer id) {
+    public Map<String,Object> getInfoAll(@RequestParam("id") String id) {
 
         Map<String, Object> map = new HashMap<>();
         List<IctGetInfo> list = new ArrayList<>();
