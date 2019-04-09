@@ -122,7 +122,6 @@ public class ApiController {
 
     /**
      * 售后列表
-     * @param businessId
      * @return
      *        {
      *             size: 2
@@ -140,7 +139,7 @@ public class ApiController {
      */
     @GetMapping(value = "cs.ajax")
     @ResponseBody
-    public Map<String, Object> cs(@RequestParam("businessId") Integer businessId) {
+    public Map<String, Object> cs() {
 
         Map<String, Object> map = new HashMap<>();
         map.put("size",ictCs.size());
